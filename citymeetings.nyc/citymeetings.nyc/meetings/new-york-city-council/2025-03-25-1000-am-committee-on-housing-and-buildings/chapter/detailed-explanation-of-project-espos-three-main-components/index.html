@@ -1,0 +1,1100 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon"
+          sizes="180x180"
+          href="https://s.citymeetings.nyc/523d4960aa2c84ba967ad41b8be1bfd38a35342d/images/favicon/apple-touch-icon.png" />
+    <link rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="https://s.citymeetings.nyc/523d4960aa2c84ba967ad41b8be1bfd38a35342d/images/favicon/favicon-32x32.png" />
+    <link rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="https://s.citymeetings.nyc/523d4960aa2c84ba967ad41b8be1bfd38a35342d/images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="https://s.citymeetings.nyc/523d4960aa2c84ba967ad41b8be1bfd38a35342d/images/favicon/site.webmanifest" />
+    <title>
+      
+    Detailed explanation of Project ESPO&#x27;s three main components | Committee on Housing and Buildings | New York City Council | March 25, 2025 | citymeetings.nyc
+
+    </title>
+    
+    
+      
+
+<link rel="preload" href="https://s.citymeetings.nyc/523d4960aa2c84ba967ad41b8be1bfd38a35342d/css/dist/styles.css" as="style">
+ 
+
+<link rel="stylesheet" type="text/css" href="https://s.citymeetings.nyc/523d4960aa2c84ba967ad41b8be1bfd38a35342d/css/dist/styles.css">
+
+
+
+
+      <style>
+      [x-cloak] {
+        display: none !important;
+      }
+      </style>
+    
+    <link href="https://s.citymeetings.nyc/523d4960aa2c84ba967ad41b8be1bfd38a35342d/css/video-js.css" rel="stylesheet" />
+
+    
+    
+      <script>
+      window.APP_CONFIG = {
+          shouldSendPosthogEvents: true,
+          shouldSendPlausibleEvents: true,
+      };
+      </script>
+      <script src="https://s.citymeetings.nyc/523d4960aa2c84ba967ad41b8be1bfd38a35342d/js/app/modules/events.js"></script>
+      <script src="https://s.citymeetings.nyc/523d4960aa2c84ba967ad41b8be1bfd38a35342d/js/alpine.min.js" defer></script>
+      <script src="https://s.citymeetings.nyc/523d4960aa2c84ba967ad41b8be1bfd38a35342d/js/htmx.min.js" defer></script>
+      <script src="https://s.citymeetings.nyc/523d4960aa2c84ba967ad41b8be1bfd38a35342d/js/app/components/beg-wall.js"></script>
+      
+      
+        <script>window.POSTHOG_PROPERTIES = {};</script>
+      
+      
+        <script>
+      if (window.APP_CONFIG.shouldSendPosthogEvents) {
+        !(function (t, e) {
+          var o, n, p, r;
+          e.__SV ||
+            ((window.posthog = e),
+            (e._i = []),
+            (e.init = function (i, s, a) {
+              function g(t, e) {
+                var o = e.split(".");
+                (2 == o.length && ((t = t[o[0]]), (e = o[1])),
+                  (t[e] = function () {
+                    t.push(
+                      [e].concat(Array.prototype.slice.call(arguments, 0))
+                    );
+                  }));
+              }
+              (((p = t.createElement("script")).type = "text/javascript"),
+                (p.crossOrigin = "anonymous"),
+                (p.async = !0),
+                (p.src = s.api_host + "/static/array.js"),
+                (r =
+                  t.getElementsByTagName("script")[0]).parentNode.insertBefore(
+                  p,
+                  r
+                ));
+              var u = e;
+              for (
+                void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
+                  u.people = u.people || [],
+                  u.toString = function (t) {
+                    var e = "posthog";
+                    return (
+                      "posthog" !== a && (e += "." + a),
+                      t || (e += " (stub)"),
+                      e
+                    );
+                  },
+                  u.people.toString = function () {
+                    return u.toString(1) + ".people (stub)";
+                  },
+                  o =
+                    "capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys getNextSurveyStep onSessionId".split(
+                      " "
+                    ),
+                  n = 0;
+                n < o.length;
+                n++
+              )
+                g(u, o[n]);
+              e._i.push([i, s, a]);
+            }),
+            (e.__SV = 1));
+        })(document, window.posthog || []);
+        posthog.init("phc_W5lvwQjbFQdky0pmvtFyA0vSLHsGqWoNk1cb0s6mZHW", {
+          api_host: "https://ph.citymeetings.nyc",
+          ui_host: "https://us.posthog.com",
+          person_profiles: "identified_only", // or 'always' to create profiles for anonymous users as well
+          capture_pageview: false, // Disable automatic pageview capture
+        });
+        // Capture pageview with custom properties
+        posthog.capture("$pageview", window.POSTHOG_PROPERTIES || {});
+      }
+        </script>
+      
+      
+    
+      
+      <script
+        defer
+        data-api="https://pl.citymeetings.nyc/api/event"
+        data-domain="citymeetings.nyc"
+        src="https://pl.citymeetings.nyc/js/script.js"
+></script>
+      
+    
+      
+    
+    <script src="https://s.citymeetings.nyc/523d4960aa2c84ba967ad41b8be1bfd38a35342d/js/video.min.js"></script>
+    <script src="https://s.citymeetings.nyc/523d4960aa2c84ba967ad41b8be1bfd38a35342d/js/videojs-offset.min.js"></script>
+    <script src="https://s.citymeetings.nyc/523d4960aa2c84ba967ad41b8be1bfd38a35342d/js/app/components/common/video-player.js"></script>
+    <script src="https://s.citymeetings.nyc/523d4960aa2c84ba967ad41b8be1bfd38a35342d/js/app/components/meeting-chapter-viewer.js"></script>
+
+    
+    
+    
+    
+    <style>[x-cloak] { visibility: hidden !important; }</style>
+
+    
+    
+    <link rel="canonical" href="https://citymeetings.nyc" />
+    <meta name="description" content="A segment from the 6 hr 25 min New York City Council Committee on Housing and Buildings session on March 25, 2025 titled &amp;quot;Detailed explanation of Project ESPO&#x27;s three main components&amp;quot;. Read the summary and watch the video.">
+    <meta property="og:title" content="Detailed explanation of Project ESPO&#x27;s three main components | Committee on Housing and Buildings | New York City Council | March 25, 2025 | citymeetings.nyc" />
+    <meta property="og:description" content="A segment from the 6 hr 25 min New York City Council Committee on Housing and Buildings session on March 25, 2025 titled &amp;quot;Detailed explanation of Project ESPO&#x27;s three main components&amp;quot;. Read the summary and watch the video.">
+    <meta property="og:image" content="https://ogloji.citymeetings.nyc/og-image/og-layouts/chapter/?mt=Committee+on+Housing+and+Buildings&amp;mdt=2025-03-25T10%3A00%3A00&amp;bn=New+York+City+Council&amp;ct=Detailed+explanation+of+Project+ESPO%27s+three+main+components&amp;s=14532.085&amp;d=369" />
+    <meta property="og:url" content="https://citymeetings.nyc" />
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Detailed explanation of Project ESPO&#x27;s three main components | Committee on Housing and Buildings | New York City Council | March 25, 2025 | citymeetings.nyc">
+    <meta name="twitter:description" content="A segment from the 6 hr 25 min New York City Council Committee on Housing and Buildings session on March 25, 2025 titled &amp;quot;Detailed explanation of Project ESPO&#x27;s three main components&amp;quot;. Read the summary and watch the video.">
+    <meta name="twitter:image" content="https://ogloji.citymeetings.nyc/og-image/og-layouts/chapter/?mt=Committee+on+Housing+and+Buildings&amp;mdt=2025-03-25T10%3A00%3A00&amp;bn=New+York+City+Council&amp;ct=Detailed+explanation+of+Project+ESPO%27s+three+main+components&amp;s=14532.085&amp;d=369" />
+
+    
+    
+    
+    
+    
+  </head>
+  <body class="
+    bg-neutral-100
+">
+    <div id="content">
+      
+      
+        
+<div class="w-full bg-neutral-50 py-3 shadow-sm">
+    <header class="relative items-center justify-between max-w-prose mx-auto px-4 md:px-6">
+        <div class="flex items-center justify-between max-w-prose mx-auto gap-x-2">
+            <a class="block flex flex-col gap-y-2" href="/">
+                <div class="flex items-center gap-x-2">
+                    <img src="https://s.citymeetings.nyc/523d4960aa2c84ba967ad41b8be1bfd38a35342d/images/citymeetings-pigeon-header-logo.png"
+                         alt="The citymeetings.nyc logo showing a pigeon at a podium with a microphone."
+                         width="48"
+                         height="48" />
+                    <div class="flex flex-col gap-y-1">
+                        <p class="text-xl sm:text-2xl font-bold text-orange-600">citymeetings.nyc</p>
+                    </div>
+                </div>
+            </a>
+            <nav x-data="{ isOpen: false }" class="flex items-center">
+                <div class="md:hidden flex items-center gap-x-2">
+                    <!-- Mobile menu button -->
+                    <button @click="isOpen = !isOpen"
+                            class="md:hidden text-gray-800 text-2xl font-bold p-2"
+                            aria-label="Toggle menu">
+                        <span class="sr-only">Menu</span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             class="h-5 w-5"
+                             fill="none"
+                             viewBox="0 0 24 24"
+                             stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+                <!-- Desktop Navigation links -->
+                <ul class="hidden md:flex md:flex-row md:items-center">
+                    <li class="md:w-auto relative" x-data="{ open: false }">
+                        <button @click="open = !open"
+                                @click.away="open = false"
+                                class="flex items-center py-2 px-4 text-gray-800 font-semibold hover:text-orange-600">
+                            Meetings
+                            <svg class="w-4 h-4 ml-1"
+                                 fill="none"
+                                 stroke="currentColor"
+                                 viewBox="0 0 24 24"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <ul x-show="open"
+                            x-cloak
+                            class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg z-10">
+                            <li>
+                                <a href="/meetings/new-york-city-council/"
+                                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">New York City Council</a>
+                            </li>
+                            <li>
+                                <a href="/meetings/nyc-charter-revision-commission/"
+                                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">NYC Charter Revision Commission</a>
+                            </li>
+                            <li>
+                                <li>
+                                    <a href="/city-planning-commission/2024-07-10-city-of-yes-public-hearing/"
+                                       class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">City of Yes</a>
+                                </li>
+                                <li>
+                                    <a href="/request-meeting-coverage/"
+                                       class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Request Coverage</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="md:w-auto">
+                            <a href="/about/"
+                               class="block py-2 px-4 text-gray-800 font-semibold hover:text-orange-600">About</a>
+                        </li>
+                        <li class="md:w-auto">
+                            <a href="/faq/"
+                               class="block py-2 px-2 text-gray-800 font-semibold hover:text-orange-600">FAQ</a>
+                        </li>
+                    </ul>
+                    <!-- Mobile Navigation links -->
+                    <ul x-show="isOpen"
+                        @click.away="isOpen = false"
+                        x-transition:enter="transition ease-out duration-75"
+                        x-transition:enter-start="opacity-0 transform -translate-y-2"
+                        x-transition:enter-end="opacity-100 transform translate-y-0"
+                        x-transition:leave="transition ease-in duration-75"
+                        x-transition:leave-start="opacity-100 transform translate-y-0"
+                        x-transition:leave-end="opacity-0 transform -translate-y-2"
+                        class="md:hidden absolute top-full right-0 left-0 w-full bg-neutral-50 shadow-sm z-10 py-2 px-4 text-right">
+                        <li class="w-full">
+                            <p class="block w-full py-2 px-4 text-gray-800 font-semibold">Meetings</p>
+                            <ul class="pl-4">
+                                <li>
+                                    <a href="/meetings/new-york-city-council/"
+                                       class="block w-full py-2 px-4 text-gray-800 hover:text-orange-600">New York City Council</a>
+                                </li>
+                                <li>
+                                    <a href="/meetings/nyc-charter-revision-commission/"
+                                       class="block w-full py-2 px-4 text-gray-800 hover:text-orange-600">NYC Charter Revision Commission</a>
+                                </li>
+                                <li>
+                                    <a href="/city-planning-commission/2024-07-10-city-of-yes-public-hearing/"
+                                       class="block w-full py-2 px-4 text-gray-800 hover:text-orange-600">City of Yes</a>
+                                </li>
+                                <li>
+                                    <a href="/request-meeting-coverage/"
+                                       class="block w-full py-2 px-4 text-gray-800 hover:text-orange-600">Request Coverage</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="w-full">
+                            <a href="/about/"
+                               class="block w-full py-2 px-4 text-gray-800 font-semibold hover:text-orange-600">About</a>
+                        </li>
+                        <li class="w-full">
+                            <a href="/faq/"
+                               class="block w-full py-2 px-4 text-gray-800 font-semibold hover:text-orange-600">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="text-sm mt-2">Your guide to NYC's public proceedings.</p>
+        </header>
+        
+            <nav class="flex flex-wrap items-center text-sm sm:text-base gap-y-2 max-w-prose mx-auto px-4 md:px-6 mt-6">
+                
+                    <a href="/" class="hover:text-orange-600 underline">Home</a>
+                    <span class="mx-2">&gt;</span>
+                
+                    <a href="/meetings/new-york-city-council/" class="hover:text-orange-600 underline">New York City Council Meetings</a>
+                    <span class="mx-2">&gt;</span>
+                
+                    <a href="/meetings/new-york-city-council/2025-03-25-1000-am-committee-on-housing-and-buildings/" class="hover:text-orange-600 underline">Committee on Housing and Buildings - March 25, 2025</a>
+                    
+                
+            </nav>
+        
+    </div>
+
+      
+      
+        
+    <div class="mx-auto my-8 max-w-prose px-4 flex flex-col gap-y-12">
+        <div data-chapter-id="28519"
+             id="chapter-28519"
+             class="flex flex-col gap-y-6"
+             x-data="meetingChapter(28519, 14532.085, 14901.431)">
+            
+<div>
+    <span class="inline-block uppercase text-xs font-semibold py-1 px-2 tracking-wide bg-chapter-type-remarks text-black border border-gray-300 rounded-full">REMARKS</span>
+</div>
+
+            <h1 class="font-semibold text-xl">Detailed explanation of Project ESPO&#x27;s three main components</h1>
+            <div class="flex flex-col gap-y-2">
+                <div class="flex flex-row items-center gap-2">
+                    <p class="text-gray-700">4:02:12</p>
+                    <p>·</p>
+                    <div class="flex flex-row items-center gap-1 text-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             fill="none"
+                             viewBox="0 0 24 24"
+                             stroke-width="1.5"
+                             stroke="currentColor"
+                             class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <p>6 min</p>
+                    </div>
+                </div>
+            </div>
+            
+            <style>
+.video-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+</style>
+<div class="video-loading"></div>
+
+
+    
+        <div class="relative bg-black">
+            
+            <video id="video-player"
+                class="video-js vjs-default-skin vjs-16-9" 
+                controls
+                preload="auto"
+                data-player-type="videojs">
+                <source type="application/x-mpegURL" src="https://stream.mux.com/tC7EWVOppaZ401pM8wCTYPlNuc5PgyiaaLiZJLArUDjs.m3u8">
+            </video>
+        </div>
+    
+
+
+            
+            <div x-data="{ toShow: 'summary' }" class="flex flex-col gap-y-6">
+                <div class="flex flex-col gap-y-4">
+                    <div class="text-sm flex items-center gap-2">
+                        <button @click="toShow = 'summary'"
+                                :class="{ 'bg-neutral-800 text-white': toShow == 'summary', 'bg-neutral-200 text-neutral-700': toShow != 'summary' }"
+                                class="px-4 py-1 focus:outline-none">Summary</button>
+                        <button @click="toShow = 'transcript'"
+                                :class="{ 'bg-neutral-800 text-white': toShow == 'transcript', 'bg-neutral-200 text-neutral-700': toShow != 'transcript' }"
+                                class="px-4 py-1 focus:outline-none">Transcript</button>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-y-4" x-show="toShow == 'summary'">
+                    <div class="chapter-description"><p>Deputy Commissioner Yigal Shamash provides a comprehensive breakdown of Project ESPO's three main components: proactive inspections, heightened enforcement, and staying vigilant.</p>
+<ul>
+<li>Proactive inspections: 60 inspections completed, focusing on sensitive buildings near development sites</li>
+<li>Heightened enforcement: 467 locations inspected, targeting bad actors and their associates</li>
+<li>Staying vigilant: 234 inspections performed, focusing on Class 1 violation reinspections and follow-ups on corrective actions</li>
+<li>Total of 761 inspections resulting in 331 violations issued</li>
+<li>Use of GIS mapping and analytics to identify sensitive buildings and track bad actors</li>
+<li>Collaboration with DOB attorneys to pursue disciplinary actions against problematic professionals and owners</li>
+</ul></div>
+                </div>
+                <div class="flex flex-col gap-y-4" x-show="toShow == 'transcript'">
+                    
+                        <div class="flex flex-col gap-y-2">
+                            <div class="font-semibold">
+                                
+                                    Yigal Shamash
+                                
+                            </div>
+                            <div class="flex flex-col gap-y-2">
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14532.085)">
+                                            
+                                            4:02:12
+                                        </div>
+                                        <div class="sentence">I&#x27;ll break it down into the three different groups that we have it in.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14536.965)">
+                                            
+                                            4:02:16
+                                        </div>
+                                        <div class="sentence">First and foremost, it was a herculean effort to get these three initiatives going.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14544.06)">
+                                            
+                                            4:02:24
+                                        </div>
+                                        <div class="sentence">We have three great assistant commissioners.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14547.0205)">
+                                            
+                                            4:02:27
+                                        </div>
+                                        <div class="sentence">Olga Schuta, who is leading up proactive inspections.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14551.705)">
+                                            
+                                            4:02:31
+                                        </div>
+                                        <div class="sentence">Ronaldo Hilton who is leading up staying vigilant.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14555.465)">
+                                            
+                                            4:02:35
+                                        </div>
+                                        <div class="sentence">And then Sal Augustino who&#x27;s heading up heightened enforcement.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14559.385)">
+                                            
+                                            4:02:39
+                                        </div>
+                                        <div class="sentence">I will start with proactive inspections.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14562.185)">
+                                            
+                                            4:02:42
+                                        </div>
+                                        <div class="sentence">We have performed 60 inspections to date.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14567.57)">
+                                            
+                                            4:02:47
+                                        </div>
+                                        <div class="sentence">In terms of heightened enforcement, we have inspected four sixty seven locations that we believe bad actors are doing work at.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14578.53)">
+                                            
+                                            4:02:58
+                                        </div>
+                                        <div class="sentence">And then staying vigilant, we have done two thirty four inspections for a total of seven sixty one inspections.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14586.795)">
+                                            
+                                            4:03:06
+                                        </div>
+                                        <div class="sentence">On those seven sixty one inspections we have issued three thirty one violations.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14593.595)">
+                                            
+                                            4:03:13
+                                        </div>
+                                        <div class="sentence">As the Commissioner said, we are not fully staffed.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14597.34)">
+                                            
+                                            4:03:17
+                                        </div>
+                                        <div class="sentence">From supervisor up, we are pretty close to being fully staffed, but the inspectorial group is what we are currently actively recruiting for and bringing in.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14612.575)">
+                                            
+                                            4:03:32
+                                        </div>
+                                        <div class="sentence">And what we&#x27;re doing is we&#x27;re taking mature senior inspectors from other units.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14621.215)">
+                                            
+                                            4:03:41
+                                        </div>
+                                        <div class="sentence">You know, not trying to strip those units dry entirely, but get a mix of new people and senior inspectors into the units to perform the work.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14633.7705)">
+                                            
+                                            4:03:53
+                                        </div>
+                                        <div class="sentence">So trying to blend in the experience within the units.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14638.654)">
+                                            
+                                            4:03:58
+                                        </div>
+                                        <div class="sentence">In terms of proactive inspections, Olga&#x27;s team has a group of inspectors.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14645.055)">
+                                            
+                                            4:04:05
+                                        </div>
+                                        <div class="sentence">They have a group of plan examiners.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14647.135)">
+                                            
+                                            4:04:07
+                                        </div>
+                                        <div class="sentence">And what they&#x27;re charged with doing is taking a look at where folks are doing development, whether that&#x27;s a new building or an alteration with an enlargement, and seeing if there&#x27;s a sensitive building next door.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14661.899)">
+                                            
+                                            4:04:21
+                                        </div>
+                                        <div class="sentence">If that sensitive building is landmarks or has numerous violations, or maybe it&#x27;s the type of building or the age of the building.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14671.485)">
+                                            
+                                            4:04:31
+                                        </div>
+                                        <div class="sentence">And what they&#x27;re looking for and we&#x27;re using a GIS map to collate all of this information together.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14678.66)">
+                                            
+                                            4:04:38
+                                        </div>
+                                        <div class="sentence">And our analytics team has put this map together and it&#x27;s really amazing.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14684.74)">
+                                            
+                                            4:04:44
+                                        </div>
+                                        <div class="sentence">We&#x27;d love to show it to you if you want to come by and take a look at the maps.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14689.14)">
+                                            
+                                            4:04:49
+                                        </div>
+                                        <div class="sentence">It&#x27;s really amazing so we can catalog what we think are sensitive buildings and then see what work is happening next door, take a look at those plans on a proactive basis, and then also do inspections.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14702.234)">
+                                            
+                                            4:05:02
+                                        </div>
+                                        <div class="sentence">So that&#x27;s what Olga&#x27;s team is heading up.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14705.21)">
+                                            
+                                            4:05:05
+                                        </div>
+                                        <div class="sentence">The heightened enforcement against bad actors.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14708.17)">
+                                            
+                                            4:05:08
+                                        </div>
+                                        <div class="sentence">And I think this is really the key to your local law is for example, we can take a look at 1950 Billingsley, right?</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14720.6455)">
+                                            
+                                            4:05:20
+                                        </div>
+                                        <div class="sentence">We did a sweep of the other buildings that that owner had.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14726.965)">
+                                            
+                                            4:05:26
+                                        </div>
+                                        <div class="sentence">And normally that would be the extent of what we would do.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14731.689)">
+                                            
+                                            4:05:31
+                                        </div>
+                                        <div class="sentence">We would take a look at the other buildings and we would stop there.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14734.97)">
+                                            
+                                            4:05:34
+                                        </div>
+                                        <div class="sentence">So if you can imagine that to be a spider web with the owner of 1950 Billingsley in the center and all the addresses of other buildings.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14745.235)">
+                                            
+                                            4:05:45
+                                        </div>
+                                        <div class="sentence">That&#x27;s one spiderweb.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14746.915)">
+                                            
+                                            4:05:46
+                                        </div>
+                                        <div class="sentence">But this unit takes it to the next level.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14750.355)">
+                                            
+                                            4:05:50
+                                        </div>
+                                        <div class="sentence">We&#x27;re not only looking at the other buildings he has, but who are the professionals that he&#x27;s using?</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14758.59)">
+                                            
+                                            4:05:58
+                                        </div>
+                                        <div class="sentence">Who are the licensees that he&#x27;s using?</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14761.95)">
+                                            
+                                            4:06:01
+                                        </div>
+                                        <div class="sentence">Who are the contractors, the permit holders that he&#x27;s using?</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14766.75)">
+                                            
+                                            4:06:06
+                                        </div>
+                                        <div class="sentence">And then creating a spider web using those folks as the center of the spider web and not just the building owner.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14775.875)">
+                                            
+                                            4:06:15
+                                        </div>
+                                        <div class="sentence">And taking a look at what those folks are doing.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14779.3955)">
+                                            
+                                            4:06:19
+                                        </div>
+                                        <div class="sentence">Now if we take a look at four or five of those professionals and maybe one or two of those have already been disciplined by us, so we focus on that group.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14788.88)">
+                                            
+                                            4:06:28
+                                        </div>
+                                        <div class="sentence">And same with the licensees and same with the permit holders.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14792.32)">
+                                            
+                                            4:06:32
+                                        </div>
+                                        <div class="sentence">So we&#x27;re taking it to the next level with that group.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14795.6455)">
+                                            
+                                            4:06:35
+                                        </div>
+                                        <div class="sentence">And it&#x27;s really focusing on those specific individuals.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14802.045)">
+                                            
+                                            4:06:42
+                                        </div>
+                                        <div class="sentence">And we can take a look at a large number of lists, whether that&#x27;s the bad owners list that gets published every year, whether that&#x27;s a list of professionals that we have discipline, whether that&#x27;s a list of licensees that we&#x27;re looking at that we&#x27;ve disciplined in the past.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14820.851)">
+                                            
+                                            4:07:00
+                                        </div>
+                                        <div class="sentence">Or maybe we find somebody new we pass that along to our fabulous attorneys at the department.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14827.495)">
+                                            
+                                            4:07:07
+                                        </div>
+                                        <div class="sentence">So part of the proactive enforcement was a whole bunch of lines for attorneys as well.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14833.415)">
+                                            
+                                            4:07:13
+                                        </div>
+                                        <div class="sentence">So we pass along those cases.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14835.176)">
+                                            
+                                            4:07:15
+                                        </div>
+                                        <div class="sentence">And that&#x27;s what makes this unit different than just a regular inspectorial unit.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14841.17)">
+                                            
+                                            4:07:21
+                                        </div>
+                                        <div class="sentence">They have investigators that go along with it to put the cases together for our attorneys, work with our attorneys, and really discipline these professionals.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14849.01)">
+                                            
+                                            4:07:29
+                                        </div>
+                                        <div class="sentence">What we&#x27;ve learned from longstanding sheds is violations are not enough.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14853.415)">
+                                            
+                                            4:07:33
+                                        </div>
+                                        <div class="sentence">You really need to wake up the owners.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14855.016)">
+                                            
+                                            4:07:35
+                                        </div>
+                                        <div class="sentence">You need to wake up the professionals and really take a hard look at them.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14859.575)">
+                                            
+                                            4:07:39
+                                        </div>
+                                        <div class="sentence">And the best way by doing that is getting our attorneys after them.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14863.335)">
+                                            
+                                            4:07:43
+                                        </div>
+                                        <div class="sentence">And last but not least, staying vigilant is two pronged.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14867.87)">
+                                            
+                                            4:07:47
+                                        </div>
+                                        <div class="sentence">We&#x27;re looking at bringing back our class one violation reinspections but being cognizant of the homeowner relief program and making sure that we are still abiding by that homeowner relief program.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14881.495)">
+                                            
+                                            4:08:01
+                                        </div>
+                                        <div class="sentence">In that program we issue requests for corrective actions and homeowners in one and two family dwellings have sixty days to correct those violating conditions.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14893.67)">
+                                            
+                                            4:08:13
+                                        </div>
+                                        <div class="sentence">As part of staying vigilant, we&#x27;re also following up on those requests for corrective actions.</div>
+                                    </div>
+                                
+                                    <div class="flex gap-x-4 items-center">
+                                        <div class="text-xs cursor-pointer underline hover:text-orange-600"
+                                             @click="player.seekTo(14898.23)">
+                                            
+                                            4:08:18
+                                        </div>
+                                        <div class="sentence">So that two pronged effort with regards to staying vigilant.</div>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    
+                </div>
+                <ul class="flex flex items-center gap-x-4 text-sm font-semibold">
+                    <li>
+                        <a href="/faq/#report-an-issue"
+                           target="_blank"
+                           class="underline hover:text-orange-600">Report an issue</a>
+                    </li>
+                    <li>
+                        <a href="/faq/#transcription-errors"
+                           target="_blank"
+                           class="underline hover:text-orange-600">About transcription errors</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex flex-col gap-y-6">
+            
+                
+<a href="/meetings/new-york-city-council/2025-03-25-1000-am-committee-on-housing-and-buildings/chapter/introduction-of-project-espo-for-proactive-enforcement/"
+   class="group basis-1/2">
+    <div class="flex flex-col gap-2 p-4 border border-neutral-200 rounded-md bg-neutral-50">
+        
+            <p class="text-neutral-600">← Previous Chapter</p>
+        
+        <p class="font-semibold group-hover:text-orange-600">Introduction of Project ESPO for proactive enforcement</p>
+    </div>
+</a>
+
+            
+            
+                
+<a href="/meetings/new-york-city-council/2025-03-25-1000-am-committee-on-housing-and-buildings/chapter/reinstitution-of-systematic-reinspections-for-class-1-violations/"
+   class="group basis-1/2">
+    <div class="flex flex-col gap-2 p-4 border border-neutral-200 rounded-md bg-neutral-50">
+        
+            <p class="text-neutral-600">Next Chapter →</p>
+        
+        <p class="font-semibold group-hover:text-orange-600">Reinstitution of systematic reinspections for Class 1 violations</p>
+    </div>
+</a>
+
+            
+        </div>
+    </div>
+
+      
+    </div>
+    
+      <div id="beg-wall-container">
+<div x-data="begWall()"
+     x-show="showBegWall"
+     x-cloak
+     class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
+    <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full mx-4">
+        <div x-show="!showNewsletter" class="flex flex-col gap-y-4">
+            <div class="flex flex items-center gap-x-4">
+                <img src="https://s.citymeetings.nyc/523d4960aa2c84ba967ad41b8be1bfd38a35342d/images/citymeetings-pigeon-header-logo.png"
+                     alt="Citymeetings.nyc pigeon logo"
+                     width="64"
+                     height="64">
+                <h1 class="text-xl font-semibold mb-4 mt-4">Is citymeetings.nyc useful to you?</h1>
+            </div>
+            <div class="flex flex-col gap-y-4">
+                <p>I'm thrilled!</p>
+                <p>
+                    Please help me out by answering <span class="font-semibold italic">just one question</span>.
+                </p>
+                <p>What do you do?</p>
+            </div>
+            <form hx-post="/submit-beg-wall/" @submit="submitBegWall()">
+                <div class="mb-4">
+                    <div class="flex items-center mb-2">
+                        <input type="radio"
+                               id="government"
+                               name="field"
+                               value="government"
+                               x-model="field"
+                               class="mr-2">
+                        <label for="government">Government</label>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <input type="radio"
+                               id="advocacy"
+                               name="field"
+                               value="advocacy"
+                               x-model="field"
+                               class="mr-2">
+                        <label for="advocacy">Advocacy</label>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <input type="radio"
+                               id="public-affairs"
+                               name="field"
+                               value="public-affairs"
+                               x-model="field"
+                               class="mr-2">
+                        <label for="public-affairs">Public Affairs</label>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <input type="radio"
+                               id="media"
+                               name="field"
+                               value="media"
+                               x-model="field"
+                               class="mr-2">
+                        <label for="media">Media</label>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <input type="radio"
+                               id="other"
+                               name="field"
+                               value="other"
+                               x-model="field"
+                               class="mr-2">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+                <div x-show="field === 'other'" class="mb-4">
+                    <label class="block mb-2">What do you do? (optional)</label>
+                    <input type="text"
+                           name="other_field"
+                           x-model="otherField"
+                           class="w-full p-2 border rounded">
+                </div>
+                <div class="flex flex-col sm:flex-row justify-between mt-8 gap-4">
+                    <button type="submit"
+                            @click="window.EventTracker.begwallSubmitted();"
+                            :disabled="!field"
+                            :class="{'bg-orange-600 hover:bg-orange-700': field, 'bg-orange-200 cursor-not-allowed': !field}"
+                            class="text-white px-4 py-2 rounded">Submit Answer</button>
+                    <button @click="skipBegWall(); window.EventTracker.begwallSkipped();"
+                            type="button"
+                            class="text-sm text-gray-600 hover:text-gray-800">Skip</button>
+                </div>
+            </form>
+        </div>
+        <div x-show="showNewsletter" class="flex flex-col gap-y-2">
+            <h2 class="text-xl font-semibold mb-2">Thank you!</h2>
+            <p class="mb-4">Want to stay up to date? Sign up for the newsletter.</p>
+            <form action="https://buttondown.com/api/emails/embed-subscribe/citymeetingsnyc"
+                  method="post"
+                  target="popupwindow"
+                  @submit="closeNewsletter(); window.EventTracker.begwallSignedUpForNewsletter();"
+                  class="flex flex-col gap-y-2 mb-4">
+                <input type="hidden" value="1" name="embed" />
+                <input type="hidden" value="begwall-signup" name="tag" />
+                <input type="hidden" :value="'works-in-' + field" name="tag" />
+                <div class="flex items-center">
+                    <input class="block p-2 flex-grow text-sm text-gray-900 bg-gray-50 rounded-l-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
+                           placeholder="Enter your email"
+                           type="email"
+                           name="email"
+                           required>
+                    <button type="submit"
+                            class="py-2 px-4 text-sm font-medium text-center text-white rounded-r-lg border cursor-pointer bg-orange-600 border-orange-500 hover:bg-orange-800 focus:ring-4 focus:ring-primary-300">
+                        Subscribe
+                    </button>
+                </div>
+            </form>
+            <button @click="closeNewsletter(); window.EventTracker.begwallSkipped();"
+                    type="button"
+                    class="text-sm text-gray-600 hover:text-gray-800">No, thanks</button>
+        </div>
+    </div>
+</div>
+</div>
+    
+  </body>
+</html>
